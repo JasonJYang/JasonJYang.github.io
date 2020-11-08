@@ -24,31 +24,35 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="Jason&#39;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hay Shop">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="本文是对收集到的可用的医疗、生物相关数据集的统计和整理，包括各数据集的内容，可用信息等。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="医疗生物相关数据集">
+<meta property="og:url" content="http://example.com/2020/11/08/%E5%8C%BB%E7%96%97%E7%94%9F%E7%89%A9%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E9%9B%86/index.html">
 <meta property="og:site_name" content="Hay Shop">
-<meta property="og:description" content="Jason&#39;s Blog">
+<meta property="og:description" content="本文是对收集到的可用的医疗、生物相关数据集的统计和整理，包括各数据集的内容，可用信息等。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-08T07:56:43.000Z">
+<meta property="article:modified_time" content="2020-11-08T09:25:07.629Z">
 <meta property="article:author" content="Jason Yang">
+<meta property="article:tag" content="数据集">
+<meta property="article:tag" content="医疗">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2020/11/08/%E5%8C%BB%E7%96%97%E7%94%9F%E7%89%A9%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E9%9B%86/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hay Shop</title>
+  <title>医疗生物相关数据集 | Hay Shop</title>
   
 
 
@@ -179,7 +183,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -191,6 +195,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">综合数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Harmonizome"><span class="nav-number">1.1.</span> <span class="nav-text">Harmonizome</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orphanet"><span class="nav-number">1.2.</span> <span class="nav-text">orphanet</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#EHR%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">2.</span> <span class="nav-text">EHR数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MIMIC-III"><span class="nav-number">2.1.</span> <span class="nav-text">MIMIC-III</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Disease%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">3.</span> <span class="nav-text">Disease数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ICD-9-ICD-10"><span class="nav-number">3.1.</span> <span class="nav-text">ICD-9 (ICD-10)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Disease-Ontology"><span class="nav-number">3.2.</span> <span class="nav-text">Disease Ontology</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OMIM"><span class="nav-number">3.3.</span> <span class="nav-text">OMIM</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Protein%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">4.</span> <span class="nav-text">Protein数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UniProt"><span class="nav-number">4.1.</span> <span class="nav-text">UniProt</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Drug%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">5.</span> <span class="nav-text">Drug数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Openrescribing-Data"><span class="nav-number">5.1.</span> <span class="nav-text">Openrescribing Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCM%E5%8F%B0%E6%B9%BE%E4%B8%AD%E5%8C%BB%E8%8D%AF%E8%B5%84%E6%96%99%E5%BA%93"><span class="nav-number">5.2.</span> <span class="nav-text">TCM台湾中医药资料库</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -245,11 +250,12 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
       
 
       
-    
+
+  
 
 
 <div class="post-block">
@@ -269,10 +275,9 @@
       <meta itemprop="name" content="Hay Shop">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/08/%E5%8C%BB%E7%96%97%E7%94%9F%E7%89%A9%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E9%9B%86/" class="post-title-link" itemprop="url">医疗生物相关数据集</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          医疗生物相关数据集
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -296,8 +301,16 @@
     </span>
 
   
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
+            <div class="post-description">本文是对收集到的可用的医疗、生物相关数据集的统计和整理，包括各数据集的内容，可用信息等。</div>
         </div>
       </header>
 
@@ -305,262 +318,91 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>本文是对收集到的可用的医疗、生物相关数据集的统计和整理，包括各数据集的内容，可用信息等。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/11/08/%E5%8C%BB%E7%96%97%E7%94%9F%E7%89%A9%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E9%9B%86/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+        <p>本文是对收集到的可用的医疗、生物相关数据集的统计和整理。</p>
+<h1 id="综合数据库"><a href="#综合数据库" class="headerlink" title="综合数据库"></a>综合数据库</h1><h2 id="Harmonizome"><a href="#Harmonizome" class="headerlink" title="Harmonizome"></a>Harmonizome</h2><p><a target="_blank" rel="noopener" href="https://maayanlab.cloud/Harmonizome/about">Harmonizome</a>是一个生物信息大数据的综合数据库，包括114个数据集，包含有基因，蛋白质，疾病等信息。</p>
+<ol>
+<li>数据内容：包含56,720类基因，295,496类属性以及他们之间的71,927,784种联系。</li>
+<li>数据格式：下载链接</li>
+<li>数据可用：可下载</li>
+</ol>
+<h2 id="orphanet"><a href="#orphanet" class="headerlink" title="orphanet"></a>orphanet</h2><p><a target="_blank" rel="noopener" href="https://www.orpha.net/consor/cgi-bin/index.php?lng=EN">Orphanet</a>数据库旨在提供稀有疾病（rare diseases）的诊断，护理，治疗等信息。</p>
+<ol>
+<li>数据内容：稀有疾病分类，相关研究文本信息，病人信息，相关医疗专家信息，诊断信息，医疗检测信息以及用药。</li>
+<li>数据格式：综合</li>
+<li>数据可用：<a target="_blank" rel="noopener" href="https://www.orpha.net/consor/cgi-bin/index.php?lng=EN">在线搜索</a>，<a target="_blank" rel="noopener" href="http://www.orphadata.org/cgi-bin/contact.html">申请下载</a></li>
+</ol>
+<h1 id="EHR数据集"><a href="#EHR数据集" class="headerlink" title="EHR数据集"></a>EHR数据集</h1><h2 id="MIMIC-III"><a href="#MIMIC-III" class="headerlink" title="MIMIC-III"></a>MIMIC-III</h2><p><a target="_blank" rel="noopener" href="https://mimic.physionet.org/about/mimic/">MIMIC-III</a>数据集包含了超过40,000病人在ICU病房内的信息，时间跨度为2001到2012。</p>
+<ol>
+<li>数据内容：病人基本信息：年龄、性别等；病人基本体征信息（测量精度约1h），包括心率、血压等；诊断信息；医疗检测结果，包括血氧检测、血红细胞量等；医疗措施；用药信息；医疗人员护理笔记；图像报告；以及存活情况等。</li>
+<li>数据格式：格式化数据，部分信息如图像报告为文本格式。</li>
+<li>数据可用：可下载，但需通过相关测试。</li>
+</ol>
+<h1 id="Disease数据集"><a href="#Disease数据集" class="headerlink" title="Disease数据集"></a>Disease数据集</h1><h2 id="ICD-9-ICD-10"><a href="#ICD-9-ICD-10" class="headerlink" title="ICD-9 (ICD-10)"></a>ICD-9 (ICD-10)</h2><p><a target="_blank" rel="noopener" href="http://icd9.chrisendres.com/">ICD-9</a>（<a target="_blank" rel="noopener" href="http://eicd10.com/">ICD-10</a>）全称为international classification of diseases，为疾病分类的全球通用编码，很多医疗数据集都使用该系统对疾病编码，或者提供到该编码的对应信息。</p>
+<ol>
+<li>数据内容：疾病编码（ICD）以及分类</li>
+<li>数据格式：编码-介绍（文本数据）</li>
+<li>数据可用：尚未找到下载方式，可在线搜索</li>
+</ol>
+<h2 id="Disease-Ontology"><a href="#Disease-Ontology" class="headerlink" title="Disease Ontology"></a>Disease Ontology</h2><p><a target="_blank" rel="noopener" href="https://disease-ontology.org/about/">Disease Ontology</a>提供疾病的DO编码，介绍，以及与其他编码（如ICD编码）的对应信息。</p>
+<ol>
+<li>数据内容：疾病编码（DOID）、介绍以及到其他编码的对应信息</li>
+<li>数据格式：编码-介绍（文本数据）</li>
+<li>数据可用：尚未找到下载方式，可在线搜索</li>
+</ol>
+<h2 id="OMIM"><a href="#OMIM" class="headerlink" title="OMIM"></a>OMIM</h2><p><a target="_blank" rel="noopener" href="https://www.omim.org/about">OMIM</a>数据集包含人体基因和其对应表现型的关系，总共包括超过15,000基因，部分有到ICD编码的对应。</p>
+<ol>
+<li>数据内容：基因位置，表现型介绍，表现型MIM代码，基因MIM编码，部分有到ICD编码的对应</li>
+<li>数据格式：格式化数据</li>
+<li>数据可用：尚未找到下载方式，可在线搜索</li>
+</ol>
+<h1 id="Protein数据集"><a href="#Protein数据集" class="headerlink" title="Protein数据集"></a>Protein数据集</h1><h2 id="UniProt"><a href="#UniProt" class="headerlink" title="UniProt"></a>UniProt</h2><p><a target="_blank" rel="noopener" href="https://www.uniprot.org/">UniProt</a>数据集提供人体蛋白质序列和相关功能信息。</p>
+<ol>
+<li>数据内容：蛋白质序列和功能</li>
+<li>数据格式：格式化数据</li>
+<li>数据可用：可下载</li>
+</ol>
+<h1 id="Drug数据集"><a href="#Drug数据集" class="headerlink" title="Drug数据集"></a>Drug数据集</h1><h2 id="Openrescribing-Data"><a href="#Openrescribing-Data" class="headerlink" title="Openrescribing Data"></a>Openrescribing Data</h2><p><a target="_blank" rel="noopener" href="https://openprescribing.net/">Openrescribing Data</a>为BNF(British National Formulary)的在线数据库，包括疾病和对应的用药信息，用药频次，花费等。</p>
+<ol>
+<li>数据内容：疾病介绍和药瓶BNF编码和介绍，用药频次等</li>
+<li>数据格式：综合</li>
+<li>数据可用：部分可下载，可在线搜索</li>
+</ol>
+<h2 id="TCM台湾中医药资料库"><a href="#TCM台湾中医药资料库" class="headerlink" title="TCM台湾中医药资料库"></a>TCM台湾中医药资料库</h2><p><a target="_blank" rel="noopener" href="http://tcm.cmu.edu.tw/zh-tw/about01.php?menuid=1">TCM台湾中医药资料库</a>包括443种中医药以及其内所包含的化合物的成分，分子量等信息。</p>
+<ol>
+<li>数据内容：中药，化合物的信息（包括结构，分子量等）</li>
+<li>数据格式：格式化数据</li>
+<li>数据可用：可下载</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" rel="tag"># 数据集</a>
+              <a href="/tags/%E5%8C%BB%E7%96%97/" rel="tag"># 医疗</a>
+          </div>
+
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/02/Network-methods-for-disease-gene-drug-interactions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jason Yang">
-      <meta itemprop="description" content="Jason's Blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hay Shop">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/02/Network-methods-for-disease-gene-drug-interactions/" class="post-title-link" itemprop="url">Network methods for disease-gene-drug interactions</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-11-02 10:51:51" itemprop="dateCreated datePublished" datetime="2020-11-02T10:51:51+08:00">2020-11-02</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/01/%E5%9F%BA%E4%BA%8E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%BC%AB%E8%AF%BB%EF%BC%88%E4%B8%80%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jason Yang">
-      <meta itemprop="description" content="Jason's Blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hay Shop">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/01/%E5%9F%BA%E4%BA%8E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%BC%AB%E8%AF%BB%EF%BC%88%E4%B8%80%EF%BC%89/" class="post-title-link" itemprop="url">基于知识图谱的推荐系统的文章解构</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2020-11-01 15:15:12 / Modified: 17:14:47" itemprop="dateCreated datePublished" datetime="2020-11-01T15:15:12+08:00">2020-11-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">推荐系统</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本文是对Xiangnan老师在WSDM 2019上的Tutorial-Learning and Reasoning on Graph for Recommendation的理解性概括。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/11/01/%E5%9F%BA%E4%BA%8E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%BC%AB%E8%AF%BB%EF%BC%88%E4%B8%80%EF%BC%89/">
-                Read more &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/11/02/Network-methods-for-disease-gene-drug-interactions/" rel="prev" title="Network methods for disease-gene-drug interactions">
+                  <i class="fa fa-chevron-left"></i> Network methods for disease-gene-drug interactions
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/25/%E5%9C%A8HPC%E4%B8%8A%E8%B7%91%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jason Yang">
-      <meta itemprop="description" content="Jason's Blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hay Shop">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/25/%E5%9C%A8HPC%E4%B8%8A%E8%B7%91%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">在HPC上跑深度学习</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2020-10-25 15:30:39 / Modified: 17:35:06" itemprop="dateCreated datePublished" datetime="2020-10-25T15:30:39+08:00">2020-10-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/HPC/" itemprop="url" rel="index"><span itemprop="name">HPC</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本文将介绍如何在CityU HPC上部署深度学习计算任务，内容包括制作Singularity镜像，申请GPU结点，以及发布任务。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/10/25/%E5%9C%A8HPC%E4%B8%8A%E8%B7%91%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                Read more &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
 
 
 
-
-
-  
 
 
 
